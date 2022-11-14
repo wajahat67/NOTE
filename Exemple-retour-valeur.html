@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Retour de valeur</title>
+</head>
+<body>
+
+    <script>
+
+        
+function formule (nombre) {
+    var resultat = nombre * 2 + 1.5;
+
+    return resultat; /* on permet à la fonction de renvoyer (on retourner) une valeur : ainsi lorsque on appellera 
+    cette fonction de renvoyer (ou retourner) une valeur qu elle fournira
+     c'est typiquement ce qui se passe avec Math.round()
+     ou encore document.querySelectior() */
+    
+
+
+}
+
+var nombre_apres_formule = formule(5);
+console.log(nombre_apres_formule);
+
+function fonction2(){
+    alert("Message 1");
+
+    return "n'importe quoi";
+
+    alert("Message 2");
+}
+
+fonction2();
+
+function message_si_grand_nombre(nombre) {
+
+    // if (nombre >= 1000) {
+    //     alert("Le nombre est grand");
+    // }
+
+    if (nombre < 1000) { // Si c'est le cas, on interromp la fonction 
+        return;// on peut aussi rien retourner la fonction s'interromp
+    }
+
+    alert("Le nombre est grand"); // Ne s'exécutera pas si le test ci-dessus 
+
+}
+
+message_si_grand_nombre(999);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+
+
+.note{
+    width: 260px;
+   
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* transform: translate(-50% , -50%); */
+}
+
+
+.handle{
+    height: 20px;
+    background-color: black;
+    text-align: right;
+    padding: 2px;
+}
+
+.note textarea{
+    width: 100%;
+  min-height: 236px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 4px;
+    box-sizing: border-box;
+    resize: none;
+    color: rgb(26, 24, 24);
+    font-family: sans-serif;
+}
+
+
